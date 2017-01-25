@@ -1,0 +1,8 @@
+- Template de PageObject que contenga las combinaciones GWT
+- Pageloader para cargar un pageobject
+- Definir metodos basicos para busqueda elementos
+- Solo cargar algunos steps
+- Eliminar cookies en cada scenario
+- Cargar variables del config
+- Cargar capabilities desde el config
+- Capybara style

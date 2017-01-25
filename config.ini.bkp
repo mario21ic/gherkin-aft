@@ -1,0 +1,11 @@
+[app]
+base_url = https://www.maseducacion.com
+#clear_cookies = lifetime
+
+[driver]
+default = firefox
+
+[xvfb]
+use = True
+width = 1070
+height =  768

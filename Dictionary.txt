@@ -1,0 +1,22 @@
+Given
+* Load page {page} with path {path} 
+
+When 
+* Click by Id {Id}
+* Click by Name {name}
+* Click by Xpath {xpath}
+* Click by Link Text {text}
+* Click by Partial Link Text {partial}
+* Click by Tag Name {tag}
+* Click by Class Name {name}
+* Click by Css {css}
+
+* Fill field by ID {fieldID} with {value}
+* Fill field by Name {name} with {value}
+* Fill field by Xpath {xpath} with {value}
+* Fill field by Tag Name {tag} with {value}
+* Fill field by Class Name {name} with {value}
+* Fill field by Css {css} with {value}
+
+Then
+* Should redirect to {path}

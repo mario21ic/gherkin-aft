@@ -1,0 +1,13 @@
+{
+  "name": "education_bdd",
+  "version": "1.0.0",
+  "description": "Create report",
+  "dependencies": {
+    "cucumber-html-reporter": "^0.3.7"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
