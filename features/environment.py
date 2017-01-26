@@ -1,6 +1,6 @@
 import os
 
-#from xvfbwrapper import Xvfb
+from xvfbwrapper import Xvfb
 
 from libs.config import base_url, driver_default, xvfb_use, xvfb_width, xvfb_height
 from libs.utils import capture, file_path
@@ -57,9 +57,9 @@ def before_all(context):
     #browsertype = configuration.get_browser()
     #context.driver = driver.switch_browser(browsertype)
 
-    #if xvfb_use:
-    #    context.display = Xvfb(width=xvfb_width, height=xvfb_height)
-    #    context.display.start()
+    if xvfb_use:
+        context.display = Xvfb(width=xvfb_width, height=xvfb_height)
+        context.display.start()
 
     setup_debug_on_error(context.config.userdata)
     context.base_url = base_url
@@ -68,6 +68,6 @@ def before_all(context):
 def after_all(context):
     #session.clear_cookies_if_required(session.Stage.lifetime, context)
     # Very last thing to run.
-    #if xvfb_use:
-    #    context.display.stop()
+    if xvfb_use:
+        context.display.stop()
     pass

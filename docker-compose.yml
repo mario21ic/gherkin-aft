@@ -1,0 +1,10 @@
+version: '2'
+services:
+
+  python:
+    image: mario21ic/gherkin-aft
+    build:
+      context: .
+    volumes:
+      - ./:/app
+    command: /app/app.sh
