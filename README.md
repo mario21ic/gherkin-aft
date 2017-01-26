@@ -64,5 +64,5 @@ $ ./app.sh
 
 Or run with paralels:
 ```
-$ python 
+$ python behave_parallel_scenario.py -t browser --process 5 --timeout 300
 ```
