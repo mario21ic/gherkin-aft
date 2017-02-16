@@ -10,27 +10,18 @@ Requirements
  - Python 3.5.0
  - Pip 2.8 >
  - Behave
- - Xvfb
 
 #### Installation
 
-Install dependencies
+=========
+Install inside virtualenv (Optional)
 ```
-$ sudo apt-get install xvfb
 $ pyenv install 3.5.0
-```
-
-Create virtualenv
-```
 $ pyenv virtualenv 3.5.0 behave-3.5
-```
-
-Activate virtualenv
-```
 $ pyenv activate behave-3.5
 ```
 
-Activate virtualenv
+Install dependencies
 ```
 $ pip install -r requirements.txt
 ```

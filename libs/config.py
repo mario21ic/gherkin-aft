@@ -1,6 +1,4 @@
-import configparser
-# compatibilidad con 2.7
-#import ConfigParser as configparser
+import ConfigParser as configparser
 import os
 
 def getConfig(section="app", key=""):
